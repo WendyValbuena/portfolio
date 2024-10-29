@@ -21,11 +21,11 @@ Test Case Design for Online Grocery Webshop
      - **Test Case:** Verify behavior when feedback contains prohibited language.
        - **Input:** Submit feedback with offensive terms.
        - **Expected Outcome:** Error message: "Inappropriate language detected."
-5.**Boundary Value Analysis**
+5. **Boundary Value Analysis**
      - **Test Case:** Verify that a user can edit an existing rating and/or comment by changing the rating or modifying the comment.
        - **Input:** Select 5 stars, edit the comment.
        - **Expected Outcome:** The system successfully updates the rating and comment, and the new values are displayed on the product page.
-6.**Use Case Testing**
+6. **Use Case Testing**
      - **Test Case:** Verify that a user can delete an existing rating and/or comment.
        - **Input:** Select the delete option for a specific product’s rating/comment.
        - **Expect:** The system successfully deletes the rating and/or comment, and no rating or comment is shown on the product page.
