@@ -9,24 +9,29 @@ Test Case Design for Online Grocery Webshop
      - **Test Case:** Verify that a user can submit a rating exactly at the boundary of 5 stars.
        - **Input:** Select 5 stars.
        - **Expected Outcome:** Rating is submitted successfully.
-2. **Boundary Value Analysis:**
-     - **Test Case:** Verify that the system prevents ratings above 5 stars.
-       - **Input:** Attempt to submit 6 stars.
-       - **Expected Outcome:** Error message: "Invalid rating."
-3. **Equivalence Partitioning:**
+2. **Equivalence Partitioning:**
      - **Test Case:** Submit a rating of 3 stars as a valid mid-point rating.
        - **Input:** Select 3 stars.
        - **Expected Outcome:** Rating is submitted successfully.
-4. **Error Guessing:**
+3. **Error Guessing:**
      - **Test Case:** Verify behavior when rating is submitted without feedback.
        - **Input:** Submit rating without comments.
        - **Expected Outcome:** Rating is accepted, feedback optional.
-5. **Error Guessing:**
+4. **Error Guessing:**
      - **Test Case:** Verify behavior when feedback contains prohibited language.
        - **Input:** Submit feedback with offensive terms.
        - **Expected Outcome:** Error message: "Inappropriate language detected."
-
+5.**Boundary Value Analysis**
+     - **Test Case:** Verify that a user can edit an existing rating and/or comment by changing the rating or modifying the comment.
+       - **Input:** Select 5 stars, edit the comment.
+       - **Expected Outcome:** The system successfully updates the rating and comment, and the new values are displayed on the product page.
+6.**Use Case Testing**
+     - **Test Case:** Verify that a user can delete an existing rating and/or comment.
+       - **Input:** Select the delete option for a specific product’s rating/comment.
+       - **Expect:** The system successfully deletes the rating and/or comment, and no rating or comment is shown on the product page.
+       
 ### **2. Age Verification for Alcoholic Products**
+
 **Test Design Techniques:** Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Error Guessing.
 
 ### Test Cases:
