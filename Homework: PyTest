@@ -1,1 +1,212 @@
+#Exercises:
+
+#Exercise 1: Basic Parameterized Tests
+
+import pytest
+
+
+def count_vowel_consonant_pairs(text):
+    """
+    Counts the number of occurrences where a vowel is
+    immediately followed by a consonant in the input string.
+
+    Args:
+        text (str): The input string to analyze.
+
+    Returns:
+        int: Count of vowel-consonant pairs.
+    """
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for i in range(len(text) - 1):
+        if text[i] in vowels and text[i + 1].isalpha() and text[i + 1] not in vowels:
+            count += 1
+
+    return count
+
+
+@pytest.mark.parametrize("input_text, expected_output", [
+    ("hello", 1),
+    ("banana", 3),
+    ("AEIOUbc", 5),
+    ("", 0),
+    ("12345", 0),
+    ("PyThOn", 1),
+    ("a!e@i#o$u%", 0),
+])
+def test_count_vowel_consonant_pairs(input_text, expected_output):
+    result = count_vowel_consonant_pairs(input_text)
+    assert result == expected_output
+
+
+#Exercise 2: Edge Case Testing
+
+import pytest
+
+def count_vowel_consonant_pairs(text):
+    """
+    Counts the number of occurrences where a vowel is
+    immediately followed by a consonant in the input string.
+
+    Args:
+        text (str): The input string to analyze.
+
+    Returns:
+        int: Count of vowel-consonant pairs.
+    """
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for i in range(len(text) - 1):
+        current_char = text[i]
+        next_char = text[i + 1]
+
+        if current_char in vowels and next_char.isalpha() and next_char not in vowels:
+            count += 1
+
+    return count
+
+
+@pytest.fixture
+def edge_cases():
+    return [
+        ("", 0), 
+        ("a!e@i#o$u%", 0),  
+        ("12345", 0),  
+        ("a", 0),
+        ("b", 0), 
+        ("a1e2i3o4u", 0)  
+    ]
+
+
+@pytest.mark.parametrize("input_text, expected_output", [
+    ("", 0), 
+    ("a!e@i#o$u%", 0),  
+    ("12345", 0),
+    ("a", 0), 
+    ("b", 0), 
+    ("a1e2i3o4u", 0)  
+])
+def test_count_vowel_consonant_pairs_edge_cases(input_text, expected_output):
+    result = count_vowel_consonant_pairs(input_text)
+    assert result == expected_output
+
+
+#Exercise 3: Negative Testing
+
+import pytest
+
+def count_vowel_consonant_pairs(text):
+    """
+    Counts the number of occurrences where a vowel is
+    immediately followed by a consonant in the input string.
+
+    Args:
+        text (str): The input string to analyze.
+
+    Returns:
+        int: Count of vowel-consonant pairs.
+
+    Raises:
+        TypeError: If the input is not a string.
+    """
+    if not isinstance(text, str):
+        raise TypeError("Input must be a string")
+
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for i in range(len(text) - 1):
+        current_char = text[i]
+        next_char = text[i + 1]
+
+        if current_char in vowels and next_char.isalpha() and next_char not in vowels:
+            count += 1
+
+    return count
+
+
+@pytest.fixture
+def invalid_inputs():
+    return [
+        (None, TypeError),
+        (12345, TypeError),
+        (["hello"], TypeError),
+        ({"text": "hi"}, TypeError)
+    ]
+
+@pytest.mark.parametrize("input_value, expected_exception", [
+    (None, TypeError),
+    (12345, TypeError),
+    (["hello"], TypeError),
+    ({"text": "hi"}, TypeError)
+])
+def test_count_vowel_consonant_pairs_invalid_inputs(input_value, expected_exception):
+    with pytest.raises(expected_exception):
+        count_vowel_consonant_pairs(input_value)
+
+#Exercise 4: Large Inputs
+
+import pytest
+import random
+import string
+import time
+
+def count_vowel_consonant_pairs(text):
+    """
+    Counts the number of occurrences where a vowel is
+    immediately followed by a consonant in the input string.
+
+    Args:
+        text (str): The input string to analyze.
+
+    Returns:
+        int: Count of vowel-consonant pairs.
+
+    Raises:
+        TypeError: If the input is not a string.
+    """
+    if not isinstance(text, str):
+        raise TypeError("Input must be a string")
+
+    vowels = "aeiouAEIOU"
+    count = 0
+
+    for i in range(len(text) - 1):
+        current_char = text[i]
+        next_char = text[i + 1]
+
+        if current_char in vowels and next_char.isalpha() and next_char not in vowels:
+            count += 1
+
+    return count
+
+
+def test_large_input_1():
+    vowels = "aeiou" * 200  # 1,000 vowels
+    consonants = "bcdfghjklmnpqrstvwxyz" * 40
+    input_text = vowels + consonants
+    result = count_vowel_consonant_pairs(input_text)
+    assert result == 1
+
+
+def test_large_input_2():
+    input_text = "".join(
+        [random.choice("aeiou") + random.choice("bcdfghjklmnpqrstvwxyz") for _ in range(1000)]
+    )
+    result = count_vowel_consonant_pairs(input_text)
+    assert result == 1000
+
+
+def test_large_input_3():
+    input_text = "".join(random.choices("aeioubcdfghjklmnpqrstvwxyz" + string.punctuation, k=10000))
+
+    start_time = time.time()
+    result = count_vowel_consonant_pairs(input_text)
+    end_time = time.time()
+
+    print(f"Test 3 (10,000 random chars) completed in {end_time - start_time} seconds.")
+    assert end_time - start_time < 2  
+
 
