@@ -62,19 +62,19 @@ Test Case Design for Online Grocery Webshop
 ### Test Cases:
 1. **Boundary Value Analysis:**
      - **Test Case:** Verify free shipping eligibility for orders at the minimum threshold.
-       - **Input:** Order total = $100 (assuming $100 is the free shipping threshold).
-       - **Expected Outcome:** Free shipping applied.
+       - **Input:** Order total = 20€.
+       - **Expected Outcome:** Free shipping applied 0€.
 2. **Boundary Value Analysis:**
      - **Test Case:** Verify shipping cost for orders just below free shipping threshold.
-       - **Input:** Order total = $99.99.
+       - **Input:** Order total = 19,99€.
        - **Expected Outcome:** Shipping fee added.
 3. **Equivalence Partitioning:**
      - **Test Case:** Verify shipping charges for orders well below the threshold.
-       - **Input:** Order total = $50.
-       - **Expected Outcome:** Order total = $20.
+       - **Input:** Order total = 10€.
+       - **Expected Outcome:** Order total = 15€.
 4. **Use Case Testing:**
      - **Test Case:** Notify user about eligibility for free shipping.
-       - **Input:** Order total increases to $100 during checkout.
+       - **Input:** Order total increases to 50€ during checkout.
        - **Expected Outcome:** Message: "You qualify for free shipping!"
 5. **Use Case Testing:**
      - **Test Case:** Notify user about eligibility for free shipping.
@@ -82,5 +82,5 @@ Test Case Design for Online Grocery Webshop
        - **Expected Outcome:** Message: "You qualify for free shipping!"
 6. **Use Case Testing:**
      - **Test Case:** Verify shipping fee updates correctly when items are removed from the cart.
-       - **Input:** Remove items to bring total below $100.
+       - **Input:** Remove items to bring total below 20€.
        - **Expected Outcome:** Shipping fee re-applied.
