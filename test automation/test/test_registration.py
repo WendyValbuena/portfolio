@@ -9,8 +9,8 @@ from pages.registration_page import RegistrationPage
 @pytest.mark.parametrize(
     "username_new, password_new, email_new, message",
     [
-        ('Tester_user_5', '2425226626', 'Testeruser5@gmail.com', 'New user register'),
-        ('Tester_user_6', '2425226626', 'Testeruser6@gmail.com', 'New user register'),
+        ('Tester_user_10', '2425226626', 'Testeruser11@gmail.com', 'New user register'),
+        ('Tester_user_11', '2425226626', 'Testeruser11@gmail.com', 'New user register'),
 
     ]
 )
