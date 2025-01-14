@@ -37,15 +37,15 @@ Test Case Design for Online Grocery Webshop
 ### Test Cases:
 1. **Boundary Value Analysis:**
      - **Test Case:** Verify access for users exactly at the minimum age of 18.
-       - **Input:** Age = 18.
+       - **Input:** Age Verification = '12-04-2006'
        - **Expected Outcome:** Access to alcoholic products is granted.
 2. **Boundary Value Analysis:**
      - **Test Case:** Verify access denial for users under 18.
-       - **Input:** Age = 17.
+       - **Input:** Age Verification = '05-08-2007'
        - **Expected Outcome:** Error message: "Access denied. You must be at least 18 years old."
 3. **Equivalence Partitioning:**
      - **Test Case:** Allow access for users over 18.
-       - **Input:** Age = 19.
+       - **Input:** Age Verification = '03-12-2005'
        - **Expected Outcome:** Access granted to alcoholic products.
 4. **Error Guessing:**
      - **Test Case:** Verify behavior when age input is left empty.
@@ -53,15 +53,15 @@ Test Case Design for Online Grocery Webshop
        - **Expected Outcome:** Error message: "Age is required."
 5. **Error Guessing:**
      - **Test Case:** Verify behavior with invalid age format.
-       - **Input:** Age = "abc".
+       - **Input:** Age = '3,12,2002'
        - **Expected Outcome:** Error message: "Invalid age format."
 
-### **3. Shipping Cost Calculation**
+### **3. Shipping Cost Calculation** (20 euros minimum order for free shipping)
 **Test Design Techniques:** Boundary Value Analysis (BVA), Equivalence Partitioning (EP), Use Case Testing
 
 ### Test Cases:
 1. **Boundary Value Analysis:**
-     - **Test Case:** Verify free shipping eligibility for orders at the minimum threshold.
+     - **Test Case:** Verify free shipping eligibility for orders at the minimum threshold. 
        - **Input:** Order total = 20€.
        - **Expected Outcome:** Free shipping applied 0€.
 2. **Boundary Value Analysis:**
