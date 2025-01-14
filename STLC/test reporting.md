@@ -87,7 +87,7 @@ Submit feedback with offensive terms
 
 ### Scenario 5: Verify that a user can edit an existing rating and/or comment.
 
-Submit feedback with offensive terms
+Submit feedback and edit comment and stars
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -146,7 +146,7 @@ Verify access to alcoholic products for users with Age = 18
 | 2    | put your credentials      |                                                                |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
-| 5    | Fill the pop-up with "30-04-2006" | Message appears: "You are of age. You can now view all products, even alcohol products." | OK | 
+| 5    | Fill the pop-up with "30/04/2006" and click on Confirm | Message appears: "You are of age. You can now view all products, even alcohol products." | OK | 
 
 ### Scenario 8: Verify access denial for users under 18
 
@@ -158,7 +158,7 @@ Verify access denial for users with Age = 17
 | 2    | put your credentials      |                                                                |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
-| 5    | Fill the pop-up with "30-04-2007" | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
+| 5    | Fill the pop-up with "30/04/2007" and click on Confirm | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
 
 ### Scenario 9: Allow access for users over 18
 
@@ -170,7 +170,8 @@ Allow access to alcoholic products for users with Age = 19
 | 2    | put your credentials      |                                                                |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
-| 5    | Fill the pop-up with "30-04-2004" | You are of age. You can now view all products, even alcohol products.| OK | 
+| 5    | Fill the pop-up with "30/04/2004" and click on Confirm |  You are of age. You can now view all products, even alcohol products. | OK | 
+
 
 ### Scenario 10: Verify behavior when age input is left empty
 
@@ -182,7 +183,8 @@ Verify the behavior when the age field is left empty
 | 2    | put your credentials      |                                                                |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
-| 5    | Leave the age field empty | Error message appears: "Age is required."	| OK | 
+| 5    | Fill the pop-up with age field empty " " and click on Confirm  | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
+
 
 ### Scenario 11: Verify behavior with invalid age format
 
@@ -194,11 +196,11 @@ Verify the behavior when an invalid age format is entered
 | 2    | put your credentials      |                                                                |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
-| 5    | Enter "abc" in the age field	 | Error message appears: "Invalid age format."	| OK | 
+| 5    | Enter "3,12,2002" in the age field	and click on confirm | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
 
 ### Scenario 12: Verify free shipping eligibility for orders at the minimum threshold
 
-Verify free shipping eligibility for orders with a total of 20€
+Verify free shipping eligibility for orders with a total of 20€. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -207,14 +209,14 @@ Verify free shipping eligibility for orders with a total of 20€
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart		| OK | https://grocerymate.masterschool.com/checkout#!
-| 6    | Go to the shopping cart	 | PThe cart page appears with the total value of the order			| OK | 
+| 6    | Go to the shopping cart	 | The cart page appears with the total value of the order			| OK | 
 | 7    | Ensure the total order is 20€		 | Free shipment if your purchase is 20€ or more.	| OK | 
 | 8    | Proceed to checkout	| Shipping fee is shown along with the total amount		| OK |
 
 
 ### Scenario 13: Verify free shipping eligibility for orders at the minimum threshold
 
-Verify free shipping eligibility for orders with a total of 20€
+Verify free shipping eligibility for orders with a total of 20€. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -229,7 +231,7 @@ Verify free shipping eligibility for orders with a total of 20€
 
 ### Scenario 14: Verify shipping charges for orders well below the threshold
 
-Verify shipping charges for orders with a total of 10€
+Verify shipping charges for orders with a total of 10€. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -244,7 +246,7 @@ Verify shipping charges for orders with a total of 10€
 
 ### Scenario 15: Notify user about eligibility for free shipping
 
-Notify user about eligibility for free shipping when the order total reaches 50€
+Notify user about eligibility for free shipping when the order total reaches 50€. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -259,7 +261,7 @@ Notify user about eligibility for free shipping when the order total reaches 50�
 
 ### Scenario 16: Notify user about eligibility for free shipping
 
-Notify user about eligibility for free shipping when the order total reaches $100
+Notify user about eligibility for free shipping when the order total reaches $100. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -274,7 +276,7 @@ Notify user about eligibility for free shipping when the order total reaches $10
 
 ### Scenario 17: Verify shipping fee updates correctly when items are removed from the cart
 
-Verify shipping fee re-applied when total drops below 20€ after removing items from the cart
+Verify shipping fee re-applied when total drops below 20€ after removing items from the cart. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
