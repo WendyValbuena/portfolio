@@ -6,7 +6,7 @@ Verify that a user can submit a rating exactly at the boundary of 5 stars
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                            |     |                    |    |
+| 2    | put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e' |        |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to shop        |    You are directed to store |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Add a product with Add to cart | The product will be added to your cart | OK |            |              |
@@ -27,7 +27,7 @@ Submit a rating of 3 stars as a valid mid-point rating
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    |  put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'  |                        |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to shop        |    You are directed to store |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Add a product with Add to cart | The product will be added to your cart | OK |            |              |
@@ -48,7 +48,7 @@ Submit rating without comments
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    |  put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |                          |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to shop        |    You are directed to store |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Add a product with Add to cart | The product will be added to your cart | OK |            |              |
@@ -70,7 +70,7 @@ Submit feedback with offensive terms
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |               |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to shop        |    You are directed to store |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Add a product with Add to cart | The product will be added to your cart | OK |            |              |
@@ -92,7 +92,7 @@ Submit feedback and edit comment and stars
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'  |                          |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to shop        |    You are directed to store |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Add a product with Add to cart | The product will be added to your cart | OK |            |              |
@@ -116,7 +116,7 @@ Select the delete option for a specific product’s rating/comment.
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'       |                                               |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to shop        |    You are directed to store |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Add a product with Add to cart | The product will be added to your cart | OK |            |              |
@@ -143,7 +143,7 @@ Verify access to alcoholic products for users with Age = 18
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'       |                       |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Fill the pop-up with "30/04/2006" and click on Confirm | Message appears: "You are of age. You can now view all products, even alcohol products." | OK | 
@@ -155,7 +155,7 @@ Verify access denial for users with Age = 17
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |                                        |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Fill the pop-up with "30/04/2007" and click on Confirm | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
@@ -167,7 +167,7 @@ Allow access to alcoholic products for users with Age = 19
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |                              |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Fill the pop-up with "30/04/2004" and click on Confirm |  You are of age. You can now view all products, even alcohol products. | OK | 
@@ -180,7 +180,7 @@ Verify the behavior when the age field is left empty
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'     |                             |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Fill the pop-up with age field empty " " and click on Confirm  | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
@@ -193,7 +193,7 @@ Verify the behavior when an invalid age format is entered
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |                                    |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Enter "3,12,2002" in the age field	and click on confirm | You are underage. You can still browse the site, but you will not be able to view alcohol products.| OK | 
@@ -205,7 +205,7 @@ Verify free shipping eligibility for orders with a total of 20€. (20 euros min
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'       |                                       |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart		| OK | https://grocerymate.masterschool.com/checkout#!
@@ -221,7 +221,7 @@ Verify free shipping eligibility for orders with a total of 20€. (20 euros min
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |                                 |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart		| OK | 
@@ -236,7 +236,7 @@ Verify shipping charges for orders with a total of 10€. (20 euros minimum orde
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'       |                               |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart		| OK | 
@@ -251,7 +251,7 @@ Notify user about eligibility for free shipping when the order total reaches 50�
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'       |                         |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart		| OK | 
@@ -266,7 +266,7 @@ Notify user about eligibility for free shipping when the order total reaches $10
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'      |                                   |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart		| OK | 
@@ -281,7 +281,7 @@ Verify shipping fee re-applied when total drops below 20€ after removing items
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
 | 1    | Go to login page MarketMate     | Login page appears | OK     | https://grocerymate.masterschool.com/auth |               |
-| 2    | put your credentials      |                                                                |     |                    |    |
+| 2    | Put credentials 'email: ramovalbuena@gmail.com', 'password: ecd912f4bbd84e'       |                                  |     |                    |    |
 | 3    | Click on Sign in           | You are directed to Homepage  | OK     | https://grocerymate.masterschool.com/ |               |
 | 4    | Go to Shop button        |    A pop-up for age verification appears |   OK     |    https://grocerymate.masterschool.com/store |             |
 | 5    | Browse and add products to the cart | Products are added to your cart, with total above 20€			| OK | 
