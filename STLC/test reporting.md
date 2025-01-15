@@ -43,7 +43,7 @@ Submit a rating of 3 stars as a valid mid-point rating
 
 ### Scenario 3: Verify behavior when rating is submitted without feedback
 
-Submit rating without comments
+As a user I hope to be able to rate the product without adding comments. 
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -65,7 +65,8 @@ Submit rating without comments
 
 ### Scenario 4: Verify behavior when feedback contains prohibited language.
 
-Submit feedback with offensive terms
+As a user I expect to comment offensive words.
+error: Comments do not appear but if I edit and retype them they do appear. 
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -87,7 +88,7 @@ Submit feedback with offensive terms
 
 ### Scenario 5: Verify that a user can edit an existing rating and/or comment.
 
-Submit feedback and edit comment and stars
+As a user when I add comments and ratings I expect to be able to edit them. 
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -175,7 +176,7 @@ Allow access to alcoholic products for users with Age = 19
 
 ### Scenario 10: Verify behavior when age input is left empty
 
-Verify the behavior when the age field is left empty
+As a user I check the behavior when the age field is left empty
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -188,7 +189,7 @@ Verify the behavior when the age field is left empty
 
 ### Scenario 11: Verify behavior with invalid age format
 
-Verify the behavior when an invalid age format is entered
+As a user I check the behavior when an invalid age format is entered
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -200,7 +201,7 @@ Verify the behavior when an invalid age format is entered
 
 ### Scenario 12: Verify free shipping eligibility for orders at the minimum threshold
 
-Verify free shipping eligibility for orders with a total of 20€. (20 euros minimum order for free shipping)
+As a user when I make purchases equal to 20 euros or more I expect free shipping. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -216,7 +217,7 @@ Verify free shipping eligibility for orders with a total of 20€. (20 euros min
 
 ### Scenario 13: Verify free shipping eligibility for orders at the minimum threshold
 
-Verify free shipping eligibility for orders with a total of 20€. (20 euros minimum order for free shipping)
+As a user I hope that when making purchases with a totoal of 19,99 euros the free shipping will not be applied. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -231,7 +232,7 @@ Verify free shipping eligibility for orders with a total of 20€. (20 euros min
 
 ### Scenario 14: Verify shipping charges for orders well below the threshold
 
-Verify shipping charges for orders with a total of 10€. (20 euros minimum order for free shipping)
+As a user when I have a total of 10 euros in my cart I expect that I will not receive free shipping. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -246,7 +247,7 @@ Verify shipping charges for orders with a total of 10€. (20 euros minimum orde
 
 ### Scenario 15: Notify user about eligibility for free shipping
 
-Notify user about eligibility for free shipping when the order total reaches 50€. (20 euros minimum order for free shipping)
+As a user when I make purchases equal to 50 euros or more I expect free shipping. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -261,7 +262,7 @@ Notify user about eligibility for free shipping when the order total reaches 50�
 
 ### Scenario 16: Notify user about eligibility for free shipping
 
-Notify user about eligibility for free shipping when the order total reaches $100. (20 euros minimum order for free shipping)
+As a user when I make purchases equal to 100 euros or more I expect free shipping. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -276,7 +277,7 @@ Notify user about eligibility for free shipping when the order total reaches $10
 
 ### Scenario 17: Verify shipping fee updates correctly when items are removed from the cart
 
-Verify shipping fee re-applied when total drops below 20€ after removing items from the cart. (20 euros minimum order for free shipping)
+As a user I check that the shipping fee is applied again if I reduce my order total to less than 20 euros. (20 euros minimum order for free shipping)
 
 | Step# | Action | Expected outcome | OK/NOK | URL | Link to issue |
 |-------|-------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
